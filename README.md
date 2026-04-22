@@ -82,6 +82,8 @@ cp .env.example .env
 ```bash
 cd database
 psql -U postgres -f migrations/001_initial_schema.sql
+psql -U postgres -f migrations/003_configuracion_schema.sql
+psql -U postgres -f migrations/004_modulos.sql
 ```
 
 ### 5. Iniciar el backend

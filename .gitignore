@@ -1,0 +1,56 @@
+# ===========================
+# .NET / ASP.NET Core
+# ===========================
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.nupkg
+*.snupkg
+[Ll]og/
+[Ll]ogs/
+TestResults/
+.dotnet/
+publish/
+
+# ===========================
+# Angular / Node
+# ===========================
+node_modules/
+dist/
+.angular/
+.npm/
+*.js.map
+
+# ===========================
+# Variables de entorno (CRÍTICO)
+# ===========================
+.env
+.env.local
+.env.*.local
+appsettings.Development.json
+appsettings.Production.json
+secrets.json
+
+# ===========================
+# Docker
+# ===========================
+.docker/
+
+# ===========================
+# IDEs
+# ===========================
+.idea/
+.vscode/settings.json
+*.swp
+*.swo
+
+# ===========================
+# OS
+# ===========================
+.DS_Store
+Thumbs.db
+desktop.ini

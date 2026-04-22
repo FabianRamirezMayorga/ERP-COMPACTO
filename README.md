@@ -46,6 +46,8 @@ ERP-COMPACTO/
 - Tabla de módulos en base de datos: `docs/database_modulos.md`
 - Tabla de proveedor de integración: `docs/database_pp_provee_integracion.md`
   - Uso transversal: repositorio de configuración/cadenas de conexión para APIs de integración consumidas por todos los módulos.
+- Tabla de plataformas de pago: `docs/database_pp_plataformas_pago.md`
+  - Uso transversal: catálogo y configuración de pasarelas/plataformas (Mercado Pago, RappiPay, Nequi, etc.) para todos los módulos.
 
 ## Módulos
 
@@ -91,6 +93,7 @@ psql -U postgres -f migrations/001_initial_schema.sql
 psql -U postgres -f migrations/003_configuracion_schema.sql
 psql -U postgres -f migrations/004_modulos.sql
 psql -U postgres -f migrations/005_pp_provee_integracion.sql
+psql -U postgres -f migrations/006_pp_plataformas_pago.sql
 ```
 
 ### 5. Iniciar el backend

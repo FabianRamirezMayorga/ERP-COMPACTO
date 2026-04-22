@@ -8,4 +8,5 @@ sleep 5
 psql -h localhost -U postgres -f database/migrations/001_initial_schema.sql
 psql -h localhost -U postgres -f database/migrations/003_configuracion_schema.sql
 psql -h localhost -U postgres -f database/migrations/004_modulos.sql
+psql -h localhost -U postgres -f database/migrations/005_pp_provee_integracion.sql
 echo "✅ ERP-COMPACTO listo!"

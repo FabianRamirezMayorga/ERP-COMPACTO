@@ -44,6 +44,7 @@ ERP-COMPACTO/
 ## Documentación técnica
 
 - Tabla de módulos en base de datos: `docs/database_modulos.md`
+- Tabla de proveedor de integración: `docs/database_pp_provee_integracion.md`
 
 ## Módulos
 
@@ -88,6 +89,7 @@ cd database
 psql -U postgres -f migrations/001_initial_schema.sql
 psql -U postgres -f migrations/003_configuracion_schema.sql
 psql -U postgres -f migrations/004_modulos.sql
+psql -U postgres -f migrations/005_pp_provee_integracion.sql
 ```
 
 ### 5. Iniciar el backend

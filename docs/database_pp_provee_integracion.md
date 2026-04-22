@@ -11,6 +11,12 @@ La tabla se crea en:
 - Base de datos objetivo: `erp_compacto`
 - Esquema por defecto en PostgreSQL: `public` (si no se especifica otro)
 
+## Propósito de negocio (IMPORTANTE)
+
+`t_pp_provee_integracion` es la tabla responsable de almacenar la configuración de integración de APIs externas del ERP, incluyendo las cadenas de conexión (connection strings) y/o estructuras de conexión necesarias para cada proveedor de integración.
+
+Esta tabla se considera de alcance transversal: **todos los módulos de la aplicación deben poder consultarla** para resolver conexiones activas y metadatos de integración.
+
 ## Diseño aplicado (administración y buenas prácticas)
 
 - Nombre de tabla respetado según requerimiento: `t_pp_provee_integracion`
@@ -30,7 +36,7 @@ La tabla se crea en:
 - `f_id_cia SMALLINT NOT NULL`
 - `f_id BIGINT GENERATED ALWAYS AS IDENTITY`
 - `f_descripcion VARCHAR(60) NOT NULL`
-- `f_xml_estructura TEXT NOT NULL`
+- `f_xml_estructura TEXT NOT NULL` (estructura/configuración de integración, p.ej. XML/JSON y cadenas de conexión)
 - `f_ind_tipo SMALLINT NOT NULL DEFAULT 0`
 - `f_ind_clase SMALLINT NOT NULL DEFAULT 0`
 

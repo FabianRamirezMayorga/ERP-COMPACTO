@@ -45,6 +45,7 @@ ERP-COMPACTO/
 
 - Tabla de módulos en base de datos: `docs/database_modulos.md`
 - Tabla de proveedor de integración: `docs/database_pp_provee_integracion.md`
+  - Uso transversal: repositorio de configuración/cadenas de conexión para APIs de integración consumidas por todos los módulos.
 
 ## Módulos
 

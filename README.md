@@ -41,6 +41,10 @@ ERP-COMPACTO/
 └── README.md
 ```
 
+## Documentación técnica
+
+- Tabla de módulos en base de datos: `docs/database_modulos.md`
+
 ## Módulos
 
 ### 🛒 Módulo POS (Punto de Venta)

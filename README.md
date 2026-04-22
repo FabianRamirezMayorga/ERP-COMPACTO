@@ -48,6 +48,8 @@ ERP-COMPACTO/
   - Uso transversal: repositorio de configuración/cadenas de conexión para APIs de integración consumidas por todos los módulos.
 - Tabla de plataformas de pago: `docs/database_pp_plataformas_pago.md`
   - Uso transversal: catálogo y configuración de pasarelas/plataformas (Mercado Pago, RappiPay, Nequi, etc.) para todos los módulos.
+- Tabla maestra de compañías: `docs/database_mm_companias.md`
+  - Uso fiscal transversal: identificación legal de empresa y parámetros críticos de operación contable/fiscal.
 
 ## Módulos
 
@@ -94,6 +96,7 @@ psql -U postgres -f migrations/003_configuracion_schema.sql
 psql -U postgres -f migrations/004_modulos.sql
 psql -U postgres -f migrations/005_pp_provee_integracion.sql
 psql -U postgres -f migrations/006_pp_plataformas_pago.sql
+psql -U postgres -f migrations/007_mm_companias.sql
 ```
 
 ### 5. Iniciar el backend
